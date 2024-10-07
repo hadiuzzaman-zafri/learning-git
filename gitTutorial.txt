@@ -1,0 +1,52 @@
+git --version
+
+git config --global user.name 'Adrian'
+git config --global user.email 'adrian@gmail.com'
+
+git init
+
+git config --global init.defaultBranch main
+
+mkdir learning-git
+cd learning-git
+git init
+
+touch hello.js
+touch readme.md 
+
+git add readme.md
+git commit -m "readme.md updated 1st time"
+
+touch hello2.js
+git add . 
+git commit - "adding files to staging area with git add ."
+
+git log     [commit history]
+
+git checkout [hash]     [allow to roll back to the previous commit]
+
+git checkout main
+git checkout -f main
+
+git branch -M main  [will make the master branch name to main] if you did't change the name previously
+
+git remote add origin [link of remote repo] origin is the remote repo name
+
+git push -u origin main
+
+git branch branch-name
+
+git checkout branch-name
+
+git branch -b branch-name
+
+git branch new-branch-name sourch-branch-name
+
+git push --set-upstream origin feature-branch   [allow use git push next time]
+git push origin feature-baranch                 [always need to set the (origin feature-branch)]
+                                                [if use -u flag then both the command do the same]
+
+git pull
+
+git pull origin main
+
